@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ExamAppAdriana"
         tools:targetApi="31">
         <activity
+            android:name=".TextWindow"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="true">
             <intent-filter>

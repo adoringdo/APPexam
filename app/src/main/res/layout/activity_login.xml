@@ -10,7 +10,7 @@
     tools:context=".Login">
 
     <TextView
-        android:text="Login"
+        android:text=" 🔒 Sveiki!"
         android:layout_marginBottom="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,26 @@
         android:paddingStart="20dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Įvesti neteisingi duomenys"
+        android:textColor="#B30E0E"
+        android:textSize="16dp"
+        android:visibility="gone"
+        android:id="@+id/loginError"
+        />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:text="Prisijungti"
+        android:layout_marginTop="45dp"
+        android:textSize="21dp"
+        />
 
 
 </LinearLayout>
