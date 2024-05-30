@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TextWindow">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Login">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:text="    Octopuses have three hearts. One pumps blood around the body, while the other two pump it to the gills. Oh, and that blood is blue, thanks to high copper levels!
+\n \n
+    Owls don't have eyeballs. They have eye tubes.
+\n \n
+    Polar bears have black skin, which helps them absorb heat from the sun to stay warm in an Arctic climate, and it likely protects the bears from harmful UV rays.
+\n \n
+    Wild dolphins call each other by name. They let out a unique whistle to identify each other and will respond if they hear their call played back.
+"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkBtn"
+        android:text="Read more animal \n facts here >>"
+        android:textSize="18dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:text="Paspaudus mygtuką atsidaro chrome tačiau chrashina visą kompiuterį"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+</LinearLayout>

@@ -1,6 +1,10 @@
 package com.example.examappadriana;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -30,8 +34,16 @@ public String[] randomPic = {"dog", "cat", "panda"};
         });
 
         ImageView myImageView = (ImageView) findViewById(R.id.greetingPic);
-        final int randomNr = new Random().nextInt(3); // [0, 60] + 20 => [20, 80]
+        final int randomNr = new Random().nextInt(3);
         myImageView.setImageResource(getResources().getIdentifier(randomPic[randomNr], "drawable", getPackageName()));
+
+        Button buttonText = findViewById(R.id.textBtn);
+        buttonText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TextWindow.class));
+            }
+        });
 
     }
 }
