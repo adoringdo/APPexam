@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">examAppAdriana</string>
+    <string name="factsBtnText"><u>Read interesting animal facts</u></string>
 </resources>
