@@ -25,6 +25,15 @@ public class TextWindow extends AppCompatActivity {
             return insets;
         });
 
+        Button buttonBack = findViewById(R.id.backBtn);
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+
         Button buttonLink = findViewById(R.id.linkBtn);
         buttonLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +42,7 @@ public class TextWindow extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+
 
     }
 }

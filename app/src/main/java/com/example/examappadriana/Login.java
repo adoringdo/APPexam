@@ -47,6 +47,7 @@ public class Login extends AppCompatActivity {
                 // Implement authentication logic here
                 if (username.equals("Admin") && password.equals("12345")) {
                     startActivity(new Intent(Login.this, MainActivity.class));
+                    //errorMessage.setVisibility(View.GONE);
                 } else {
                     errorMessage.setVisibility(View.VISIBLE);
                 }
